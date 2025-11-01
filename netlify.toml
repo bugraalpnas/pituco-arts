@@ -1,0 +1,12 @@
+[build]
+  # Build komutunuz package.json'daki ile aynı olmalı
+  command = "npm run build"
+
+  # Vite'ın çıktı (output) dizini (genellikle 'dist')
+  publish = "dist"
+
+# Gelen tüm istekleri ana index.html dosyasına yönlendiren kural
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
